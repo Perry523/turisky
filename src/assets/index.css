@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.banner-image {
+  background-image: url('./mile_banner.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.input-base {
+  @apply border border-primary focus:outline-none p-2 rounded text-sm placeholder:text-sm;
+}
+.card {
+  @apply bg-white rounded-xl;
+  box-shadow: 2px 3px 12px 2px rgba(210, 210, 210, 1);
+}
