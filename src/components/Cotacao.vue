@@ -124,9 +124,6 @@ type selectedBrand = {
 function numberToBrl(value: number) {
   return value.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 }
-function getImage(path) {
-  return new URL(path, import.meta.url).href
-}
 function isBrandIncluded(brand: brand) {
   return selectedCias.value.some((selectedBrand) => selectedBrand.id === brand.id)
 }
